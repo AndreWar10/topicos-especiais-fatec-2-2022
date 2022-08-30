@@ -35,13 +35,13 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
   <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/onboard1.jpeg" alt="Search - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_light.jpeg" alt="Search - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/onboard2.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/trans_light.jpeg" alt="Details Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/onboard3.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/newtransf_light.jpeg" alt="Details Page - version mobile" height="500px">
     </td>
      
   </table>
@@ -51,13 +51,13 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
   <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/home.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_dark.jpeg" alt="Details Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/extrato.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/transf_dark.jpeg" alt="Details Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/green-bank-compass-app/blob/master/assets/images/comprovante.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="" alt="Details Page - version mobile" height="500px">
     </td>
     
   </table>
