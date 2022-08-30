@@ -25,13 +25,15 @@ class CustomTheme {
         backgroundColor: Color.fromARGB(255, 11, 11, 11),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey.shade300,
-        selectedIconTheme: const IconThemeData(color: Colors.white),
+        selectedIconTheme: const IconThemeData(color: Color.fromARGB(255, 255, 0, 0)),
         unselectedIconTheme: const IconThemeData(color: Colors.white)),
     primaryColor: Colors.red[900],
     dividerColor: Colors.white70,
     iconTheme: const IconThemeData(color: Colors.red),
     primaryIconTheme: const IconThemeData(color: Colors.red),
     inputDecorationTheme: InputDecorationTheme(
+      iconColor:  Colors.grey,
+      focusColor: Colors.red,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
       ),
