@@ -1,5 +1,3 @@
-# topicos-especiais-fatec-2-2022
-
 <div> 
   <strong>💸Transfer Fatec</strong>
 </div>
