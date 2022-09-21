@@ -1,5 +1,5 @@
 <div> 
-  <strong>💸Transfer Fatec</strong>
+  <strong>💸AJ Bank Fatec</strong>
 </div>
 
 <div>
@@ -7,7 +7,7 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
 </div>  
   
 <div>  
-  O App é composto de uma animação inicial (Splash Page), uma tela inicial de apresentação, a tela de transferências realizadas e uma tela para realizar uma nova transferências. Implementei Dark/Light theme, e armazenamento em cache.
+  O App é composto de uma animação inicial (Splash Page), uma tela inicial de apresentação, a tela de transferências realizadas, uma tela para realizar uma nova transferências, uma tela de listagem de contatos e uma tela pra registrar novo contato . Implementei Dark/Light theme.
 </div>
 
   #
@@ -27,6 +27,12 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
 <div align="left"> 
    <strong>04. New Transfer Page:</strong> Tela para efetuar nova transferência.
 </div>  
+<div align="left"> 
+   <strong>05. Contatos Page:</strong> Tela que exibe as os contatos.
+</div>
+<div align="left"> 
+   <strong>06. New Contact Page:</strong> Tela para cadastrar novo usuário.
+</div> 
 
   #
 
@@ -40,8 +46,7 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
     </td>
     <td>
       <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/newtransf_light.jpeg" alt="New Transfer Page - version mobile" height="500px">
-    </td>
-     
+    </td>     
   </table>
   
 #
