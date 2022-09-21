@@ -33,13 +33,13 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
   <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_light.jpeg" alt="Search - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_light.jpeg" alt="Splash Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/trans_light.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/trans_light.jpeg" alt="Transfer Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/newtransf_light.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/newtransf_light.jpeg" alt="New Transfer Page - version mobile" height="500px">
     </td>
      
   </table>
@@ -49,13 +49,13 @@ Aplicação desenvolvida em Flutter destinado a disciplina de tópicos especias 
   <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_dark.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/splash_dark.jpeg" alt="Splash Page  - version mobile" height="500px">
     </td>
     <td>
-      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/transf_dark.jpeg" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/transf_dark.jpeg" alt="Transfer Page - version mobile" height="500px">
     </td>
     <td>
-      <img src="" alt="Details Page - version mobile" height="500px">
+      <img src="https://github.com/AndreWar10/topicos-especiais-fatec-2-2022/blob/master/aula1/assets/newtransfer_dark.jpeg" alt="New Transfer Page - version mobile" height="500px">
     </td>
     
   </table>
