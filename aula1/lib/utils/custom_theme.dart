@@ -13,13 +13,16 @@ class CustomTheme {
     scaffoldBackgroundColor: Color.fromARGB(255, 11, 11, 11),
     backgroundColor: Color.fromARGB(255, 0, 0, 0),
     splashColor: Colors.black.withOpacity(0.0),
+    cardColor: Colors.black,
+    
+    listTileTheme: ListTileThemeData(iconColor: Colors.red),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         showSelectedLabels: true,
         showUnselectedLabels: true,
         type: BottomNavigationBarType.fixed,
         enableFeedback: true,
         elevation: 0,
-        selectedLabelStyle: TextStyle(color: Colors.grey),
+        selectedLabelStyle: TextStyle(color: Colors.white),
         unselectedLabelStyle: TextStyle(color: Colors.grey),
         landscapeLayout: BottomNavigationBarLandscapeLayout.linear,
         backgroundColor: Color.fromARGB(255, 11, 11, 11),
@@ -32,12 +35,12 @@ class CustomTheme {
     iconTheme: const IconThemeData(color: Colors.red),
     primaryIconTheme: const IconThemeData(color: Colors.red),
     inputDecorationTheme: InputDecorationTheme(
-      iconColor:  Colors.grey,
-      focusColor: Colors.red,
+      labelStyle: TextStyle(color: Colors.white),
+      iconColor:  Colors.red,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
       ),
-      hintStyle: const TextStyle(color: Colors.white),
+      hintStyle: const TextStyle(color: Colors.grey),
       enabledBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: Colors.grey, width: 1),
       ),
@@ -61,6 +64,12 @@ class CustomTheme {
       ),
     ),
   );
+
+
+
+
+
+
   static ThemeData lightTheme = ThemeData().copyWith(
     colorScheme: ColorScheme.fromSwatch()
         .copyWith(primary: Colors.red[900], secondary: Colors.grey[900]),
@@ -85,7 +94,7 @@ class CustomTheme {
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey.shade300,
-        selectedIconTheme: const IconThemeData(color: Colors.white),
+        selectedIconTheme: const IconThemeData(color: Color.fromARGB(255, 0, 0, 0)),
         unselectedIconTheme: const IconThemeData(color: Colors.white)),
     primaryColor: Colors.red[900],
     dividerColor: Colors.white70,
@@ -95,7 +104,7 @@ class CustomTheme {
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
       ),
-      hintStyle: const TextStyle(color: Colors.white),
+      hintStyle: const TextStyle(color: Colors.black45),
       enabledBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: Colors.grey, width: 1),
       ),

@@ -1,15 +1,14 @@
 import 'package:aula1/models/transferencia.dart';
-import 'package:aula1/pages/transferencia/formulario_transferencia.dart';
-import 'package:aula1/widgets/listview_transferencia_widget.dart';
+import 'package:aula1/pages/transferencias/formulario_transferencia_page.dart';
+import 'package:aula1/widgets/transferencias/listview_transferencia_widget.dart';
 import 'package:flutter/material.dart';
 
-const _tituloAppBar = "Transferências";
+const _tituloAppBar = "Lista de Transferências";
 
 class ListaTransferenciasPage extends StatefulWidget {
   final List<Transferencia> _transferencias = [];
 
-  ListaTransferenciasPage({Key? key})
-      : super(key: key); //acesso ele com widget.
+  ListaTransferenciasPage({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -22,6 +21,7 @@ class ListaTransferenciasPageState extends State<ListaTransferenciasPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(_tituloAppBar),
       ),
       body: ListViewTransfWidget(
@@ -31,10 +31,11 @@ class ListaTransferenciasPageState extends State<ListaTransferenciasPage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          //future: como se fosse um callBack
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => FormularioTransferencia()),
+            MaterialPageRoute(
+              builder: (context) => (FormularioTransferenciaPage()),
+            ),
           )
           .then((transferenciaRecebida) => _atualiza(transferenciaRecebida));
         },

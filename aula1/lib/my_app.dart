@@ -1,5 +1,5 @@
 import 'package:aula1/utils/custom_theme.dart';
-import 'package:aula1/widgets/routes_widget.dart';
+import 'package:aula1/widgets/rotas/routes_widget.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -10,6 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> with WidgetsBindingObserver{
+  //tema do App inicia com light
   var theme = CustomTheme.lightTheme;
   var darkTheme = CustomTheme.darkTheme;
   var lightTheme = CustomTheme.lightTheme;
@@ -20,16 +21,20 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver{
     WidgetsBinding.instance.addObserver(this);
     changeTheme();
   }
+
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
+  
   @override
   void didChangePlatformBrightness() {
     changeTheme();
   }
+
   changeTheme() {
+        //pega o tema encontado no dispositivo
     var brightness = WidgetsBinding.instance.window.platformBrightness;
     brightness == Brightness.dark ? theme = darkTheme : theme = lightTheme;
 

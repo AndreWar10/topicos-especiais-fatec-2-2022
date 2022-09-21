@@ -1,4 +1,4 @@
-import 'package:aula1/widgets/splash_widget.dart';
+import 'package:aula1/widgets/splash/splash_widget.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -13,7 +13,7 @@ class SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 8)).then(
-      (_) => Navigator.of(context).pushReplacementNamed('/lista'),
+      (_) => Navigator.of(context).pushReplacementNamed('/dashboard'),
     );
   }
   
