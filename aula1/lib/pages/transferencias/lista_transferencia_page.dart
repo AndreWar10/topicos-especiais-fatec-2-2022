@@ -1,19 +1,15 @@
 import 'package:aula1/models/transferencia.dart';
 import 'package:aula1/pages/transferencias/formulario_transferencia_page.dart';
-import 'package:aula1/widgets/transferencias/listview_transferencia_widget.dart';
+import 'package:aula1/utils/default/pages/transferencia/default_transferencia.dart';
+import 'package:aula1/widgets/pages/transferencias/listview_transferencia_widget.dart';
 import 'package:flutter/material.dart';
 
-const _tituloAppBar = "Lista de Transferências";
-
 class ListaTransferenciasPage extends StatefulWidget {
+  ListaTransferenciasPage({Key? key}) : super(key: key);
   final List<Transferencia> _transferencias = [];
 
-  ListaTransferenciasPage({Key? key}) : super(key: key);
-
   @override
-  State<StatefulWidget> createState() {
-    return ListaTransferenciasPageState();
-  }
+  State<StatefulWidget> createState() => ListaTransferenciasPageState();
 }
 
 class ListaTransferenciasPageState extends State<ListaTransferenciasPage> {
@@ -22,32 +18,20 @@ class ListaTransferenciasPageState extends State<ListaTransferenciasPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(_tituloAppBar),
+        title: Text(DefaultTransferencia.defaultAppBar),
       ),
-      body: ListViewTransfWidget(
-        widget: widget,
-        transferencias: widget._transferencias,
-      ),
+      body: ListViewTransfWidget(widget: widget,transferencias: widget._transferencias),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => (FormularioTransferenciaPage()),
-            ),
-          )
-          .then((transferenciaRecebida) => _atualiza(transferenciaRecebida));
+          Navigator.push(context,MaterialPageRoute(builder: (context) => (FormularioTransferenciaPage())))
+          .then((transferenciaRecebida) => _atualiza(context, transferenciaRecebida));
         },
       ),
     );
   }
-
-  void _atualiza(Transferencia? transferenciaRecebida) {
-    if (transferenciaRecebida != null) {
-      setState(() {
-        widget._transferencias.add(transferenciaRecebida);
-      });
+  void _atualiza(BuildContext context, Transferencia? transferenciaRecebida) {
+    if (transferenciaRecebida != null){setState(() {widget._transferencias.add(transferenciaRecebida);});
     }
   }
 }

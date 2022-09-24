@@ -29,9 +29,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  #animação
   lottie: ^1.4.1 
+  #icone do app
   flutter_launcher_icons: ^0.10.0
+  #conversao / data
   intl: ^0.17.0
+  #mascaras
+  brasil_fields: ^1.5.0
+  #validacao 
+  get: ^4.6.5
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -1,6 +1,6 @@
 import 'package:aula1/models/transferencia.dart';
-import 'package:aula1/widgets/transferencias/item_transferencia_widget.dart';
 import 'package:aula1/pages/transferencias/lista_transferencia_page.dart';
+import 'package:aula1/widgets/pages/transferencias/item_transferencia_widget.dart';
 import 'package:flutter/material.dart';
 
 class ListViewTransfWidget extends StatelessWidget {

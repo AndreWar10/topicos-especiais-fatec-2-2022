@@ -1,9 +1,9 @@
-import 'package:aula1/widgets/contatos/custom_form_contato_widget.dart';
+import 'package:aula1/utils/default/pages/contato/default_contato.dart';
+import 'package:aula1/widgets/pages/contatos/custom_form_contato_widget.dart';
 import 'package:flutter/material.dart';
 
 class FormularioContatoPage extends StatefulWidget {
   const FormularioContatoPage({Key? key}) : super(key: key);
-
   @override
   State<StatefulWidget> createState() => FormularioContatoPageState();
 }
@@ -22,7 +22,7 @@ class FormularioContatoPageState extends State<FormularioContatoPage> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Novo Contato"),
+          title: Text(DefaultContato.defaultFormAppBar),
         ),
         body: CustomFormContatoWidget(
           controllerNome: _controllerNome,

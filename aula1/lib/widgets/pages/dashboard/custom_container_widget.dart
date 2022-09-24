@@ -1,5 +1,5 @@
-import 'package:aula1/widgets/dashboard/custom_icon_widget.dart';
-import 'package:aula1/widgets/dashboard/custom_title_widget.dart';
+import 'package:aula1/widgets/pages/dashboard/custom_icon_widget.dart';
+import 'package:aula1/widgets/pages/dashboard/custom_title_widget.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainerDashboardWidget extends StatelessWidget {

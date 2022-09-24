@@ -1,5 +1,5 @@
 import 'package:aula1/models/transferencia.dart';
-import 'package:aula1/widgets/transferencias/custom_card_transferencia_widget.dart';
+import 'package:aula1/widgets/pages/transferencias/custom_card_transferencia_widget.dart';
 import 'package:flutter/material.dart';
 
 class ItemTransferenciaWidget extends StatelessWidget {

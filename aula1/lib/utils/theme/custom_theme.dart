@@ -13,8 +13,7 @@ class CustomTheme {
     scaffoldBackgroundColor: Color.fromARGB(255, 11, 11, 11),
     backgroundColor: Color.fromARGB(255, 0, 0, 0),
     splashColor: Colors.black.withOpacity(0.0),
-    cardColor: Colors.black,
-    
+    cardColor: Colors.grey[800],
     listTileTheme: ListTileThemeData(iconColor: Colors.red),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         showSelectedLabels: true,
@@ -28,7 +27,8 @@ class CustomTheme {
         backgroundColor: Color.fromARGB(255, 11, 11, 11),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey.shade300,
-        selectedIconTheme: const IconThemeData(color: Color.fromARGB(255, 255, 0, 0)),
+        selectedIconTheme:
+            const IconThemeData(color: Color.fromARGB(255, 255, 0, 0)),
         unselectedIconTheme: const IconThemeData(color: Colors.white)),
     primaryColor: Colors.red[900],
     dividerColor: Colors.white70,
@@ -36,7 +36,7 @@ class CustomTheme {
     primaryIconTheme: const IconThemeData(color: Colors.red),
     inputDecorationTheme: InputDecorationTheme(
       labelStyle: TextStyle(color: Colors.white),
-      iconColor:  Colors.red,
+      iconColor: Colors.red,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
       ),
@@ -65,11 +65,6 @@ class CustomTheme {
     ),
   );
 
-
-
-
-
-
   static ThemeData lightTheme = ThemeData().copyWith(
     colorScheme: ColorScheme.fromSwatch()
         .copyWith(primary: Colors.red[900], secondary: Colors.grey[900]),
@@ -94,7 +89,8 @@ class CustomTheme {
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey.shade300,
-        selectedIconTheme: const IconThemeData(color: Color.fromARGB(255, 0, 0, 0)),
+        selectedIconTheme:
+            const IconThemeData(color: Color.fromARGB(255, 0, 0, 0)),
         unselectedIconTheme: const IconThemeData(color: Colors.white)),
     primaryColor: Colors.red[900],
     dividerColor: Colors.white70,
@@ -108,8 +104,8 @@ class CustomTheme {
       enabledBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: Colors.grey, width: 1),
       ),
-      focusedBorder: UnderlineInputBorder(
-          borderSide: const BorderSide(color: Colors.red)),
+      focusedBorder:
+          UnderlineInputBorder(borderSide: const BorderSide(color: Colors.red)),
       fillColor: Colors.white,
       isDense: true,
       contentPadding: const EdgeInsets.fromLTRB(12, 16, 12, 2),

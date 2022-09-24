@@ -1,13 +1,8 @@
+import 'package:aula1/utils/default/pages/transferencia/default_transferencia.dart';
+import 'package:aula1/utils/default/style/default_style.dart';
 import 'package:aula1/utils/functions/new_transfer_function.dart';
-import 'package:aula1/widgets/editor_widget.dart';
+import 'package:aula1/widgets/editor/editor_widget.dart';
 import 'package:flutter/material.dart';
-
-const _tituloAppBar = "Nova Transferência";
-const _rotuloCampoValor = "Valor";
-const _dicaCampoValor = "0.00";
-const _dicaCampoNumeroConta = "0000";
-const _rotuloCampoNumeroConta = "Número da conta";
-const _textoBotaoConfirmar = "Confirmar";
 
 class FormularioTransferenciaPage extends StatefulWidget {
   const FormularioTransferenciaPage({Key? key}) : super(key: key);
@@ -28,7 +23,7 @@ class FormularioTransferenciaPageState
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(_tituloAppBar),
+          title: Text(DefaultTransferencia.tituloAppBar),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -36,22 +31,23 @@ class FormularioTransferenciaPageState
               EditorWidget(
                   isNumb: true,
                   controlador: _controllerConta,
-                  rotulo: _rotuloCampoNumeroConta,
-                  dica: _dicaCampoNumeroConta,
-                  icone: Icons.account_balance),
+                  rotulo: DefaultTransferencia.rotuloCampoNumeroConta,
+                  dica: DefaultTransferencia.dicaCampoNumeroConta,
+                  icone: DefaultTransferencia.iconeConta),
               EditorWidget(
                   isNumb: true,
                   controlador: _controllerValor,
-                  rotulo: _rotuloCampoValor,
-                  dica: _dicaCampoValor,
-                  icone: Icons.monetization_on),
-               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.3,
-                height: MediaQuery.of(context).size.height * 0.05,
+                  rotulo: DefaultTransferencia.rotuloCampoValor,
+                  dica: DefaultTransferencia.dicaCampoValor,
+                  icone: DefaultTransferencia.iconeValor,
+                  isDin: false,),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * DefaultStyle.defaultWidth,
+                height: MediaQuery.of(context).size.height * DefaultStyle.defaultHeight,
                 child: ElevatedButton(
                   onPressed: () => criaTransferencia(
                       context, _controllerConta, _controllerValor),
-                  child: Text(_textoBotaoConfirmar),
+                  child: Text(DefaultTransferencia.textoBotaoConfirmar),
                 ),
               ),
             ],

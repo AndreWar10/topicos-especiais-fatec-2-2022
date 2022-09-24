@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 
 void criaTransferencia(BuildContext context,TextEditingController controllerConta,TextEditingController controllerValor) {
   final int? numeroConta = int.tryParse(controllerConta.text);
-  final double? valorTransferencia = double.tryParse(controllerValor.text);
+  final String valorTransferencia = controllerValor.text;
+  final DateTime data = DateTime.now();
   
-  if (numeroConta != null && valorTransferencia != null) {
-    final transferenciaCriada = Transferencia(valorTransferencia, numeroConta);
+  if (numeroConta != null) {
+    final transferenciaCriada = Transferencia(valorTransferencia, numeroConta, data);
     Navigator.pop(context, transferenciaCriada);
   }
 }

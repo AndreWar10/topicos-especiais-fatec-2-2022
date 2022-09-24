@@ -22,12 +22,13 @@ class CustomCardContatoWidget extends StatelessWidget {
       ),
       child: Card(
         child: ListTile(
+          trailing: Icon(Icons.help),
           leading: Icon(
             Icons.person,
             size: 30,
           ),
           title: Text(_contato.nome),
-          subtitle: Text(_contato.telefone),
+          subtitle: Text("Telefone: ${_contato.telefone}"),
         ),
       ),
     );

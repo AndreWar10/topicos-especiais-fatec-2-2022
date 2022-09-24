@@ -1,5 +1,5 @@
 import 'package:aula1/models/contato.dart';
-import 'package:aula1/widgets/contatos/custom_card_contato.dart';
+import 'package:aula1/widgets/pages/contatos/custom_card_contato.dart';
 import 'package:flutter/material.dart';
 
 class ItemContatoWidget extends StatelessWidget {

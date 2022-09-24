@@ -1,6 +1,6 @@
 import 'package:aula1/models/contato.dart';
 import 'package:aula1/pages/contatos/contatos_page.dart';
-import 'package:aula1/widgets/contatos/item_contato_widget.dart';
+import 'package:aula1/widgets/pages/contatos/item_contato_widget.dart';
 import 'package:flutter/material.dart';
 
 class ListViewContatoWidget extends StatelessWidget {

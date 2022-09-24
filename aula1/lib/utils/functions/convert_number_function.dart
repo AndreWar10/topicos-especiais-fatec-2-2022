@@ -6,6 +6,5 @@ convertNumber(double number) {
     locale: "pt_BR",
     decimalDigits: 2,
   );
-
   return nfc.format(number);
 }

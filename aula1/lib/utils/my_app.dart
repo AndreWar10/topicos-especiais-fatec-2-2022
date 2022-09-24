@@ -1,4 +1,4 @@
-import 'package:aula1/utils/custom_theme.dart';
+import 'package:aula1/utils/theme/custom_theme.dart';
 import 'package:aula1/widgets/rotas/routes_widget.dart';
 import 'package:flutter/material.dart';
 
